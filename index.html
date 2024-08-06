@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy"
+          content="default-src 'self'; script-src 'self'" />
+    <title>Hello from Electron renderer!</title>
+</head>
+<body>
+    <input id="param1" type="text" placeholder="Path to file" readonly>
+    <button id="P1">Select File</button>
+    <select id="param2">
+        <option value="SHA256">SHA256</option>
+        <option value="MD5">MD5</option>
+        <option value="SHA1">SHA1</option>
+    </select>
+    <button id="P2">Run Script</button>
+    <p id="output"></p>
+    <script src="render.js"></script>
+</body>
+</html>
